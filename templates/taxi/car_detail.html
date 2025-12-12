@@ -2,7 +2,7 @@
 
 {% block content %}
   <h3>Model: {{ car.model }}</h3>
-  <h3>Manufacturer: {{ car.manufacturer }}</h3>
+  <h3>Manufacturer: {{ car.manufacturer.name }} ({{ car.manufacturer.country }})</h3>
   <h3>
     Drivers:
     {% for driver in car.drivers.all %}

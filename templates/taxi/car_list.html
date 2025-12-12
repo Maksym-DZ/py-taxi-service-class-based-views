@@ -2,9 +2,9 @@
 
 {% block content %}
   <h1>Car List</h1>
-  <ul>
+  <table>
     {% for car in car_list %}
       <li><a href="{% url "taxi:car_detail" car.id %}">{{ car.id }}</a> {{ car }}</li>
     {% endfor %}
-  </ul>
+  </table>
 {% endblock %}
